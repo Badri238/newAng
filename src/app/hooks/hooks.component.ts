@@ -26,7 +26,7 @@ export class HooksComponent {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     console.log("entering")
-    this.cService.update("iifij")
+    this.cService.update("iifij");
   }
   call(): void{
     console.log("hii")
