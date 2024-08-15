@@ -1,0 +1,9 @@
+<p appCustom>new1 works!</p>
+<p>{{title | uppercase}}</p>
+<p>{{val | custom : 15 | currency :'USD'}}</p>
+<ng-container *ngTemplateOutlet="sayHi">
+<p>Container wont display</p>
+</ng-container>
+<ng-template #sayHi>
+<p>I will not display in the screen</p>
+</ng-template>

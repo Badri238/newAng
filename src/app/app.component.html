@@ -1,0 +1,61 @@
+<!-- <p>{{title}}</p>
+
+<input [(ngModel)]="title"/>
+<button [disabled]="title.length === 0">SUbmit</button>
+
+<form [formGroup]="formGroup" (ngSubmit)="getValues()">
+  <input type="text" formControlName="name">
+  <input type="text" formControlName="role">
+  <button [disabled]="!name.valid || !role.valid">Submit from reactive form</button>
+</form>
+
+
+<p>{{a}}</p>
+
+<p [ngClass]="option">Customized CSS</p>
+<p *ngIf="!name.valid">it has errors</p>
+
+<div *ngFor="let a of loops">
+  <p>{{a}}</p>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Name1</th>
+    </tr>
+  </thead>
+<tbody>
+  <tr *ngFor="let a of loops">
+    <td>{{a?.name}}</td>
+    <td>{{a?.role}}</td>
+  </tr>
+</tbody>
+</table>
+<select >
+  <option *ngFor="let opt of loops">{{opt.name}}</option>
+</select>
+<div [ngSwitch]="option">
+ <p *ngSwitchCase="'monday'">1st day</p>
+ <p *ngSwitchCase="'tuesday'">2nd day</p>
+ <p *ngSwitchCase="'wednesday'">3rd day</p>
+ <p *ngSwitchDefault>Invalud</p>
+</div>
+<button (click)="add()">Add Values</button>
+
+
+<div *ngIf="flag">
+  <app-child [title]="title" (valtoParent) = "getValue($event)"></app-child>
+</div>
+
+<button (click)="callService()">Call common values</button>
+
+<p>{{data?.title}}</p> -->
+<a [routerLink]="'home'">HOoks</a>
+<p>hii</p>
+<br/>
+<input [(ngModel)]="name"/>
+<input [(ngModel)] ="pass"/>
+<button (click)="navigate()">Login</button>
+<a [routerLink]="'ch'">Child</a>
+<router-outlet></router-outlet>
