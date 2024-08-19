@@ -15,6 +15,8 @@ export class ChildComponent {
 
   }
   child1 = "This is word from child1"
+
+  subjectAns?:string
   @Input()
   title!: String
 
@@ -39,6 +41,7 @@ export class ChildComponent {
     this.subscription = this.cService.commonSubject$.subscribe((e) => {
       console.log("i will run when subject changes")
       console.log(e)
+      this.subjectAns = e
     })
   }
 
